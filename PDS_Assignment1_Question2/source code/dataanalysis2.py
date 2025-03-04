@@ -24,27 +24,27 @@ df = pd.read_csv(cleaned_data_path)
 # Print column names to verify structure
 print("Available columns in dataset:", df.columns)
 
-# 🔹 Convert categorical variables to numeric encoding using LabelEncoder
+# Convert categorical variables to numeric encoding using LabelEncoder
 label_encoders = {}
 for col in df.select_dtypes(include=["object"]).columns:
     le = LabelEncoder()
     df[col] = le.fit_transform(df[col])
     label_encoders[col] = le
 
-# 🔹 Compute and save detailed summary statistics
+# Compute and save detailed summary statistics
 summary_stats = df.describe().T  # Transposed for better readability
 summary_stats["median"] = df.median()
 summary_stats["std_dev"] = df.std()
 summary_stats["mode"] = df.mode().iloc[0]
 summary_stats.to_csv(os.path.join(output_dir, "summary_statistics.csv"))
 
-# 🔹 Compute and save correlation matrix
+# Compute and save correlation matrix
 correlation_matrix = df.corr()
 correlation_matrix.to_csv(os.path.join(output_dir, "correlation_matrix.csv"))
 
 print(" Data analysis completed. Results saved.")
 
-# 🔹 **Additional Analysis**
+# **Additional Analysis**
 highest_scores = df[["math_score", "reading_score", "writing_score"]].max()
 lowest_scores = df[["math_score", "reading_score", "writing_score"]].min()
 average_scores = df[["math_score", "reading_score", "writing_score"]].mean()
