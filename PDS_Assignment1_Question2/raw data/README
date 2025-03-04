@@ -1,10 +1,15 @@
-Features: Height, Weight, Age, Grip Strength, Frailty
-Records: 10
-Frailty: Y (Yes) or N (No)
+Total Records: 1000 rows
+Total Columns: 8
+Column Details
 
-Data Types:
-Height (float, inches)
-Weight (integer, lbs)
-Age (integer, years)
-Grip Strength (integer, kg)
-Frailty (categorical: Y/N)
+Categorical Variables:
+gender
+race/ethnicity
+parental level of education
+lunch
+test preparation course
+
+Numerical Variables:
+math score
+reading score
+writing score
