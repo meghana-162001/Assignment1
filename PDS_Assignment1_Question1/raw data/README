@@ -1,0 +1,10 @@
+Features: Height, Weight, Age, Grip Strength, Frailty
+Records: 10
+Frailty: Y (Yes) or N (No)
+
+Data Types:
+Height (float, inches)
+Weight (integer, lbs)
+Age (integer, years)
+Grip Strength (integer, kg)
+Frailty (categorical: Y/N)
