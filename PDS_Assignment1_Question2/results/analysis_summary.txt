@@ -1,0 +1,18 @@
+Student Performance Analysis
+=============================
+
+Highest Scores:
+math_score       100
+reading_score    100
+writing_score    100
+
+Lowest Scores:
+math_score        0
+reading_score    17
+writing_score    10
+
+Average Scores:
+math_score       66.089
+reading_score    69.169
+writing_score    68.054
+
